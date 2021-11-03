@@ -10,7 +10,7 @@ order by n_films desc;
 
 # 2. Most active customer (the customer that has rented the most number of films)
 
-select customer_id, a.first_name, a.last_name, count(b.rental_id) as n_rentals from sakila.customer as a
+select a.customer_id, a.first_name, a.last_name, count(b.rental_id) as n_rentals from sakila.customer as a
 inner join sakila.rental as b
 using(customer_id)
 group by customer_id

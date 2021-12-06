@@ -64,11 +64,11 @@ def my_transformations(x, y, test_size=0.2, numerical=True, scaler="standard", c
             categories = [t[1] for t in list(ordinal_dict.items())]
 
             ordinal_encoder = OrdinalEncoder(categories=categories)
-            x_train_cat.loc[:, x_train_cat_ord.columns] = pd.DataFrame(ordinal_encoder.fit_transform(x_train_cat_ord)
-                                                                       , columns=x_train_cat_ord.columns)
+            x_train_cat[x_train_cat_ord.columns] = pd.DataFrame(ordinal_encoder.fit_transform(x_train_cat_ord)
+                                                                , columns=x_train_cat_ord.columns)
             output_train_cat_ord = x_train_cat.drop(nominal_list, axis=1)
-            x_test_cat.loc[:, x_test_cat_ord.columns] = pd.DataFrame(ordinal_encoder.fit_transform(x_test_cat_ord)
-                                                                     , columns=x_test_cat_ord.columns)
+            x_test_cat[x_test_cat_ord.columns] = pd.DataFrame(ordinal_encoder.fit_transform(x_test_cat_ord)
+                                                              , columns=x_test_cat_ord.columns)
             output_test_cat_ord = x_test_cat.drop(nominal_list, axis=1)
 
         else:
@@ -80,8 +80,8 @@ def my_transformations(x, y, test_size=0.2, numerical=True, scaler="standard", c
 
         if len(nominal_list) != 0:
 
-            output_train_cat_nom = pd.get_dummies(x_train_cat[nominal_list], drop_first=True)
-            output_test_cat_nom = pd.get_dummies(x_test_cat[nominal_list], drop_first=True)
+            output_train_cat_nom = pd.get_dummies(x_train_cat.loc[:, nominal_list], drop_first=True)
+            output_test_cat_nom = pd.get_dummies(x_test_cat.loc[:, nominal_list], drop_first=True)
 
         else:
 

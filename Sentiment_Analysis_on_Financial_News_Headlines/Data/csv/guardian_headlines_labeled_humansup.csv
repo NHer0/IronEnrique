@@ -1,0 +1,317 @@
+text,certainty,sentiment,manual_sentiment
+The long read  The George Soros philosophy – and its fatal flaw,0.0,negative,discard
+Lockdown lifting: US exercise equipment sales soar amid pandemic,6.103515625e-05,positive,negative
+The Guardian view on His Dark Materials on the BBC: a perfect match,9.918212890625e-05,positive,discard
+EasyJet founder offers £5m reward as he seeks to derail Airbus order,0.000244140625,positive,negative
+Business live  Government won't hold inquiry into hedge funds speculating on no-deal Brexit – as it happened,0.00030517578125,negative,positive
+Profit over safety? Boeing under fire over 737 Max crashes as families demand answers,0.000335693359375,negative,negative
+"Business leader  
+
+
+  If government doesn’t help the high streets, we’ll be shopping in ghost towns",0.0003509521484375,positive,negative
+'Damaged ideology': business must reinvent capitalism – ex-Unilever boss,0.0003662109375,negative,negative
+"Mission incredible: Bob Katter, Ricki-Lee and the $135m Dunk Island spending spree",0.0003662109375,positive,positive
+May could yet leave the Brexit rebels high and dry,0.0003662109375,negative,discard
+UK house price growth slips to six-year low amid Brexit uncertainty,0.0005035400390625,negative,negative
+The disruptors  Storm in a teacup: could instant tea overtake the classic bag?,0.0006103515625,negative,discard
+Exploitation in focus  'National shame': MP sounds alarm over UK fast fashion factories,0.00091552734375,negative,negative
+How do countries differ in their response to the coronavirus economic crisis?,0.0009765625,negative,discard
+BMW 'interested in taking over Honda's Swindon site',0.0009765625,positive,positive
+"Business leader  
+
+
+  Trump’s trade war makes political sense to his base. Rivals must beware",0.0010986328125,positive,discard
+Persimmon launches review in drive to rebuild its image,0.0010986328125,positive,positive
+China confident of agreeing US trade deal despite Trump's combative stance,0.00115966796875,positive,positive
+5G conspiracy theories fuel attacks on telecoms workers,0.001251220703125,negative,negative
+Venmo: how the payment app exposes our private lives,0.0013427734375,positive,negative
+Online fashion retailer Boohoo doubles sales over festive period,0.0013885498046875,negative,positive
+Danske Bank's choice of CEO blocked by Danish regulator,0.001617431640625,positive,negative
+"Project Syndicate economists  
+
+
+  A Chinese digital currency is the real threat, not Facebook's Libra",0.00201416015625,positive,negative
+"Pizza Express to close up to 75 restaurants, risking 1,000 jobs",0.0020599365234375,negative,negative
+ITV chief: now is last chance to build British challenger to Netflix,0.00213623046875,positive,positive
+Running reaches crossroads as Nike-led footwear arms race infects mainstream,0.002197265625,negative,negative
+"Nils Pratley on finance  
+
+
+  Ministers should check their post – Royal Mail's problems are stacking up",0.002197265625,negative,negative
+Primark warning sends shivers through high street in festive run-up,0.002410888671875,positive,negative
+Observer comment cartoon  Boris Johnson unleashes the ogre of recession – cartoon,0.0026855170726776,negative,discard
+"UK pay growth rises to 3.1%, the highest in almost a decade",0.002716064453125,negative,positive
+Declaring war on Cosmo? It feels like we're back in the 1980s,0.0027465522289276,negative,negative
+Air France could face trial over 2009 crash of Rio-Paris flight,0.002899169921875,negative,negative
+Business live  London stock market rallies after worst outage in eight years - as it happened,0.0029296875,negative,positive
+"Financial inequality: the ethnicity gap in pay, wealth and property",0.0029296875,positive,negative
+Calls for 'serious reform' to prevent more Carillion-style collapses,0.00311279296875,positive,negative
+Good riddance to GetMeIn and Seatwave. But fans should still beware,0.003173828125,negative,discard
+Co-op offers 'no frills' cremation service,0.00323486328125,negative,discard
+Martin Shkreli pays price for arrogance – and 'egregious multitude of lies',0.0032958686351776,negative,negative
+"When it comes to estate agents, the future could be purple",0.0032958686351776,negative,discard
+"How will the US reopen? Slowly, bit by bit, but we may never return to 'normal'",0.003448486328125,positive,positive
+Business live  Turkish stocks tumble as crackdown on lira speculation spooks markets - as it happened,0.00347900390625,negative,negative
+Business live  FTSE 100 slides to seven-month low as Wall Street falls – as it happened,0.0035858154296875,negative,negative
+The Guardian view on Venezuela’s hyperinflation: a lethal dose?,0.0036620795726776,negative,negative
+Solar power: how investing can help to change lives,0.0037841796875,negative,positive
+Richard Branson facing backlash over plea for UK bailout of Virgin,0.0041274726390838,positive,negative
+Business live  City watchdog to take no action over RBS mistreatment of customers - as it happened,0.004150390625,negative,negative
+Saudi modernisation drive is reflected in Aramco's faltering sale,0.004150390625,positive,positive
+'Wake-up call for UK' after nine months of falling car production,0.00421142578125,positive,negative
+Calls to put a stop to the academisation of schools,0.0043945014476776,positive,discard
+"Northern rail to be stripped of franchise, says Grant Shapps",0.0045165717601776,negative,discard
+Meet the British CEO of the firm behind the gun that brought tragedy to Florida,0.0046996772289276,positive,discard
+"Tories have cost households £1,000 in energy bills, says Labour",0.0047339797019958,negative,negative
+"The Cambridge Analytica Files  Facebook's privacy practices are under investigation, FTC confirms",0.0047454535961151,positive,negative
+"Most UK businesses unprepared for no-deal Brexit, says Carney",0.0047454535961151,positive,negative
+Unprotected GKN left to brave the cold corporate winds alone,0.0047607123851776,negative,negative
+"US consumer watchdog chief can be fired by president, supreme court rules",0.0048827826976776,positive,negative
+"Jack Lear review – Shakespeare, shanties and a raging Barrie Rutter",0.0048827826976776,positive,discard
+"Business leader  
+
+
+  UK blackouts raise questions over private sector’s right to profit from power",0.0050963759422302,positive,negative
+Minister to meet Vauxhall owner amid Ellesmere Port closure fears,0.0052489936351776,positive,negative
+Uber to face stricter EU regulation after ECJ rules it is transport firm,0.0052489936351776,positive,negative
+The long read  How big tech is dragging us towards the next financial crash,0.0053710341453552,positive,negative
+The four contracts that finished Carillion,0.0053710341453552,positive,negative
+The polluters  Why are asset managers investing in fossil fuel companies?,0.0054320693016052,negative,discard
+The G7 minus one: Trump packs wrecking ball for Canada summit,0.0054625868797302,positive,discard
+City watchdog launches investigation into sub-prime lender Amigo,0.0055541396141052,positive,negative
+South Korea's Bithumb loses $31.5m in cryptocurrency heist,0.0056456625461578,positive,negative
+Aviva says executive pay should be first casualty of Covid cuts,0.0059660971164703,positive,negative
+Barter and dollars the new reality as Venezuela battles hyperinflation,0.0059813559055328,negative,negative
+UK seeks to borrow £225bn to fund huge surge in public spending,0.0060881674289703,negative,negative
+Putting butter back in the pastry: Patisserie Valerie's road to recovery,0.0062865316867828,negative,positive
+Amazon under fire for new packaging that cannot be recycled,0.0063170790672302,negative,negative
+"Brexit vote has cost each UK household £900, says Mark Carney",0.0063475668430328,positive,negative
+Billionaire casino owner James Packer quits business interests,0.0064086019992828,negative,discard
+The time for the Bank to raise interest rates has long since come and gone,0.0065306723117828,positive,discard
+Saudi summit in crisis as Khashoggi case prompts mass withdrawals,0.0065916776657104,negative,negative
+Sainsbury's boss defiant despite £46m cost of failed Asda merger,0.0066489279270172,positive,negative
+"OECD tax reform plans could make inequality worse, analysis finds",0.0067290067672729,negative,negative
+IMF chief warns of economic slowdown on back of trade disputes,0.0068282186985015,positive,negative
+"'UK housebuilding revolution': £65,000 prefab homes go into production",0.0069273710250854,negative,positive
+"UK estate agents at their gloomiest for 10 years, says Rics",0.0069578886032104,negative,negative
+Brands including Ikea shun new safety accord after Rana Plaza disaster,0.0069578886032104,positive,negative
+Lean meat: US pork prices rise as sweltering summer leads to skinny pigs,0.0070189535617828,positive,negative
+"Measures to curb executive pay have flopped, says thinktank",0.0070189535617828,positive,discard
+Tobacco: a deadly business  Mexico: children toil in tobacco fields as reforms fail to fix poverty,0.0070799589157104,positive,negative
+Seat of the problem: why does Christopher Nolan hate chairs?,0.0073240995407104,positive,discard
+Avengers: Endgame breaks global box-office record in opening weekend,0.0074003636837005,negative,discard
+Government 'ignores' UK textiles firms desperate to make PPE,0.0074156522750854,positive,negative
+Calvin Klein to close luxury collections business,0.007568210363388,negative,negative
+US private health insurance companies clog system amid Covid-19 pandemic,0.0075834691524505,positive,negative
+Atlanta airport: power restored but flight delays expected for days,0.007690280675888,negative,negative
+Guardian Opinion cartoon  Martin Rowson on the collapse of Thomas Cook – cartoon,0.007690280675888,positive,discard
+George Soros hedge fund makes £16m bet against Daily Mail owner shares,0.007842868566513,positive,discard
+Shares in lender Amigo plunge as regulatory crackdown looms,0.007934421300888,positive,negative
+Today in Focus  Untested and unsafe: the medical implants scandal,0.0079954266548156,negative,negative
+Man changed address of UPS headquarters to his own apartment,0.0080249905586242,positive,discard
+Labour pledges ban on TV gambling adverts during live sports,0.008056491613388,positive,negative
+Why business could prosper under a Corbyn government,0.0080869793891906,positive,positive
+The London arms fair is an inexcusable disgrace – it’s a stain on the nation,0.0081785321235656,negative,negative
+US retailer Sears files for bankruptcy,0.0081976056098937,positive,negative
+"Covid-19 to wipe out equivalent of 195m jobs, says UN agency",0.0083006024360656,negative,negative
+UK inflation hits six-month high as petrol and energy prices rise,0.0083006024360656,negative,negative
+Harley-Davidson: Trump's tariffs pose grave threat to famous American name,0.0084226429462432,positive,negative
+BT unveils new logo after years of work – its name in a circle,0.0084836781024932,positive,negative
+'Body blow for area': Bridgend devastated by Ford factory closure,0.0086057484149932,negative,negative
+"UK living wage rises above inflation rate for 180,000 workers",0.0086057484149932,negative,positive
+Fashion industry reels as coronavirus shuts shops and cancels orders,0.0086667835712432,negative,negative
+Dominic Cummings accused of conflict of interest over NHS fund,0.0088498592376708,positive,negative
+Debenhams comment by Sports Direct forces watchdog to intervene,0.0090329349040985,positive,negative
+Business made simple  Secret Millionaire star Kavita Oberoi: 'The turning point was when I didn't get the promotion',0.0090939998626708,negative,positive
+Guardian Opinion cartoon  Martin Rowson on Heathrow's third runway – cartoon,0.0091550350189208,negative,discard
+The upside  String of British firms switch over to four-day working week,0.0091550350189208,positive,discard
+Boohoo eyes struggling fashion brands after trading beats forecasts,0.0092160403728485,negative,positive
+After #MeToo  'It takes balls of steel': fighting UK supermarkets for equal pay,0.0093400180339813,negative,discard
+"Holiday Inn owner to ditch mini toiletries from 5,000 hotels",0.0093686282634735,positive,discard
+IMF tells US record growth is costing average citizens dear,0.0094678103923797,positive,negative
+"Project Syndicate economists  
+
+
+  Trump hasn't improved on Nafta – but at least he hasn't blown up trade",0.0094906687736511,negative,positive
+Weinstein Company fires chief operating officer David Glasser,0.0095211863517761,negative,negative
+Use it or lose it: just hours left to put in PPI compensation claim,0.0095822215080261,negative,discard
+Simon Fox to step down as chief of Daily Mirror owner Reach,0.0096127390861511,negative,negative
+Why record job growth in America hides a troubling reality,0.0096432566642761,positive,negative
+"Whirlpool recalls more than 500,000 washing machines over fire risk",0.0097462534904479,negative,negative
+Signs of the times: America's fading shopfronts – in pictures,0.0097653269767761,positive,discard
+MPs back Heathrow third runway project as Johnson faces criticism,0.0098873674869537,negative,negative
+Revealed: how drugs giants can access your health records,0.0100094079971313,positive,negative
+"Your problems, with Anna Tims  As it’s the season of goodwill, praise be for these customer services",0.0100704729557037,negative,discard
+Women's retirement age rising faster than men's in UK,0.0100704729557037,positive,discard
+"Broken capitalism  
+
+
+  Yes, contemporary capitalism can be compatible with liberal democracy",0.0101925134658813,positive,discard
+"White household income in UK 63% higher than black households, ONS finds",0.0103298425674438,positive,negative
+Sky and BT will 'lose £1bn if sporting events stay shut until August',0.0103755891323089,positive,negative
+"Retail slump has put 21,000 jobs at risk in 2018 so far",0.0104137361049652,positive,negative
+Unemployment caused by coronavirus will leave deep scars in US,0.0104776322841644,positive,negative
+Miriam Margolyes joins Mark Rylance's RSC boycott over BP,0.0104976594448089,negative,negative
+Former Carillion finance directors expected to face investigation,0.0104976594448089,negative,negative
+UK environmentalists target Barclays in fossil fuels campaign,0.0106196999549865,positive,negative
+"Observer business agenda  
+
+
+  M&S still feeling the heat as winter approaches",0.0106196999549865,negative,negative
+'We're heartbroken': new starters trapped by furlough loophole,0.0107418000698089,negative,discard
+Parliament to debate RBS 'hang themselves' comment,0.0107418000698089,positive,discard
+Bank of England under pressure to shelve interest rate rise,0.0107418000698089,positive,negative
+Patisserie Valerie boss quits and turnaround specialist steps in,0.0108638405799865,positive,negative
+Neil Woodford's most disastrous stock choices – a roundup,0.0108638405799865,negative,negative
+Next chief calls 2017 'toughest in 25 years' as profits slide by 8%,0.0109248757362365,positive,negative
+WPP chairman defends handling of Sir Martin Sorrell’s departure,0.0112300217151641,negative,negative
+"Nils Pratley on finance  
+
+
+  Why should future whistleblowers believe they will be safe?",0.0112910270690917,negative,discard
+This is Europe  'There is a glimmer of hope': economists on coronavirus and capitalism,0.0113520622253417,negative,negative
+British businesses say new Brexit deal worse than May's agreement,0.0114741325378417,negative,negative
+Fears of global economic slowdown as virus follows trade war,0.011596143245697,positive,negative
+Poundworld prepares to appoint administrators in bid to avert collapse,0.011596143245697,negative,negative
+Nissan tries to bar Carlos Ghosn from Rio property over corruption scandal,0.011657178401947,negative,negative
+"After mixed messages and mess-ups, Johnson bows to the inevitable",0.011718213558197,positive,discard
+World's biggest fund manager vows to divest from thermal coal,0.0117792189121246,positive,discard
+Daily Express editor calls its front pages 'downright offensive',0.0118402540683746,negative,discard
+"Morrisons boss hands back £600,000 in bonuses",0.0118707716464996,negative,discard
+"Business leader  
+
+
+  Raft of woeful forecasts spells an end to Trump’s economic bragging rights",0.0119012892246246,positive,discard
+Martin Sorrell's resignation triggers 6.5% slide in WPP shares,0.0122064054012298,positive,negative
+Potential bidders circle Thomas Cook as it hires turnaround specialist,0.0123284757137298,positive,positive
+"Carpetright to close 92 outlets, shedding hundreds of jobs",0.0124505162239074,negative,negative
+Grosvenor Crescent rated the most expensive street in England and Wales,0.0125115513801574,positive,discard
+"Money talks  
+
+
+  Retirement – can you make your pension last at least 20 years?",0.012694627046585,negative,discard
+The race to find a coronavirus treatment has one major obstacle: big pharma,0.012755662202835,negative,negative
+World Bank boss calls for more transparent lending to poor nations,0.0129387378692626,positive,discard
+Comic Relief's Richard Curtis backs ethical pension campaign,0.0131370723247528,negative,discard
+No-deal Brexit threatens overseas territories,0.0133048892021179,positive,negative
+Mexico could tighten migration controls to defuse Trump tariffs threat,0.0134269297122955,positive,discard
+Freezing Britain and the chill wind of austerity,0.0134269297122955,negative,negative
+"Nils Pratley on finance  
+
+
+  Ministers should move fast to protect incomes and employment",0.0134879350662231,negative,negative
+KPMG 'severely reprimanded' for audit failings at Co-op Bank,0.0135794878005981,positive,negative
+Weatherwatch  Weatherwatch: The downs and ups of plane contrails,0.0136710405349731,negative,discard
+Flybe falls prey to coronavirus and 'stronger' airlines are likely to follow,0.0137930810451507,positive,negative
+"Ban diesel cars from cities, say half of UK drivers in poll",0.0137930810451507,negative,discard
+Deadly oil spill devastates Borneo port city – in pictures,0.0139151215553283,positive,negative
+George Soros makes £10.5m stock market bet against WH Smith,0.013928472995758,positive,discard
+Tesla investigates video of Model S car exploding,0.0140371620655059,positive,negative
+Even Trump may ultimately retreat from the cost of the China trade war,0.0140371620655059,positive,negative
+Covid-19 crisis opens doors to a leaner but meaner British Airways,0.0142202377319335,positive,negative
+"Observer business agenda  
+
+
+  Ladbrokes owner GVC makes the running to beat pay revolt",0.014253944158554,positive,positive
+Animals farmed  How can you support farmers who are using fewer antibiotics?,0.0142812430858612,positive,discard
+Southern Rail users miss flights after bottleneck at station,0.0142812430858612,negative,negative
+Business live  Bank of England governor slams critics over Brexit analysis - as it happened,0.0143422782421112,negative,negative
+"Bounced cheques, cancelled flights – why do we still fly Ryanair?",0.0144032835960388,positive,negative
+"Covid-19 economic rescue plans must be green, say environmentalists",0.0144032835960388,positive,positive
+Capitalism and the death of conservatism,0.0144032835960388,positive,discard
+Lull at London City airport stokes fears of coronavirus impact,0.0144032835960388,negative,negative
+Colgate launches vegan-certified toothpaste in recyclable tube,0.0145253539085388,positive,positive
+"Project Syndicate economists  
+
+
+  Bernanke, Paulson and Geithner: revisiting the 2008 financial crisis",0.0145863592624664,negative,discard
+Equality commission to investigate BBC over pay discrimination,0.0148418843746185,positive,negative
+Amazon confirms it pays UK business rates of only £63.4m,0.0148685872554779,positive,discard
+"US may be in recession amid Covid-19 crisis, says Fed chair Jerome Powell",0.0149525105953216,positive,negative
+Consumer champions  Why won’t Barclays let me cancel my direct debit?,0.0150745511054992,negative,discard
+Brexit anxiety for businesses 'at highest since referendum',0.0151355564594268,negative,negative
+Coronavirus spreads around the world – in pictures,0.0151355564594268,negative,negative
+'Every £1 spent is a vote for how we want to live': Mary Portas on the high-street shops that will thrive after lockdown,0.0151355564594268,negative,discard
+"Nils Pratley on finance  
+
+
+  An overhaul of Britain's railways was long overdue even before Covid-19",0.0152575969696044,positive,positive
+Sales of hybrid cars soar as diesels plunge by nearly a quarter,0.0153033733367919,positive,positive
+"Nils Pratley on finance  
+
+
+  George Osborne must understand the IMF role is no popularity contest",0.0153186321258544,negative,discard
+Car price war and falling air fares cool UK inflation,0.0154864490032196,negative,positive
+Foxtons profits plunge over London housing market slump,0.0155016779899597,positive,negative
+Gulf petrodollars are a destructive addiction – the UK must kick the habit,0.0155016779899597,positive,negative
+"Gaucho to file for administration, with 1,500 jobs at risk",0.0156237483024597,negative,negative
+Geneva goes electric: 2019 Motor Show – in pictures,0.0156237483024597,positive,positive
+St Mawes named UK’s top seaside resort in Which? poll,0.0157457590103149,positive,discard
+TSB crisis could drag into next week as bank turns to IBM,0.0159288346767425,negative,discard
+"Nils Pratley on finance  
+
+
+  SoftBank punt on WeWork office space hub is risky business",0.0159288346767425,negative,negative
+Wuhan facing 'wartime conditions' as global coronavirus deaths reach 724,0.0159898400306701,positive,negative
+Former advertising executive reveals junk food-pushing tactics,0.0160508751869201,negative,negative
+HS2 was only ever about politics. And the battle will reach the heart of No 10,0.0160661339759826,positive,discard
+Model companions: restaurant solves social distancing dilemma with mannequins,0.0161118805408477,positive,discard
+Jeremy Hunt hits back at Airbus over Brexit warnings on jobs,0.0161881446838378,negative,negative
+Boots criticised over failure to cut price of morning-after pill,0.0162034034729003,positive,negative
+"Nils Pratley on finance  
+
+
+  'Melt-up' coinage could signal last hurrah for US stock market",0.0162034034729003,positive,positive
+"Nils Pratley on finance  
+
+
+  Ferrexpo could have done without the side show to its Deloitte spat",0.0162644386291503,negative,discard
+Elon Musk says Tesla planning 'thorough reorganization',0.0162949562072753,positive,positive
+Brexit uncertainty chills senior staff job market in UK,0.0163407325744628,negative,negative
+"The People’s March, Waitrose and Lidl",0.016386479139328,negative,discard
+Banking royal commission condemns greed of financial sector in first report,0.0166153013706207,negative,negative
+"Nils Pratley on finance  
+
+
+  It’s long past time to give auditors teeth",0.0168593525886535,positive,discard
+Shoppers expected to spend more than £4bn on Boxing Day,0.0169203877449035,negative,negative
+Cruise and Maritime Voyages in emergency talks after potential loan deal collapses,0.0169661343097686,positive,negative
+Dixons Carphone CEO will step down to run chemist chain Boots,0.0169814229011535,positive,negative
+Guardian Opinion cartoon  Ben Jennings on British Airways and data security – cartoon,0.0169966518878936,positive,discard
+"US jobs report: record-breaking streak continues as 225,000 added in January",0.0169966518878936,positive,positive
+Gambling watchdog fails to curb fixed-odds betting stakes to £2,0.0170271396636962,positive,discard
+Justin Bieber remix of Despacito part of £200m song catalogue sale,0.0171492099761962,negative,discard
+Trump may seek separate Nafta talks with Canada and Mexico,0.0171492099761962,negative,positive
+The Final Days of EMI: Selling the Pig by Eamonn Forde – review,0.0172102153301239,negative,discard
+New car sales in UK plunge by 44% as coronavirus bites,0.0173189043998718,negative,negative
+Bankers work around the clock to iron out EU finance reforms,0.0173932909965515,negative,discard
+East coast line bailout puts rail privatisation back in spotlight,0.0174542665481567,positive,negative
+How high street shops in England plan to trade from Monday,0.0176983177661895,positive,discard
+House of Fraser’s survival bid creates anger and fear,0.0178203880786895,positive,negative
+Hardy Amies fashion house falls into administration,0.0178813934326171,negative,negative
+Kshama Sawant wants to tax Amazon so people can afford to live in Seattle. Can she pull it off?,0.0179881453514099,positive,negative
+The recession risk  Is a global recession coming? Here are seven warning signs,0.018094927072525,positive,negative
+Trump considers block on crude oil imports to prop up US market,0.0181483626365661,positive,positive
+Hammerson offloads nine UK retail parks for £455m,0.0181864798069,negative,discard
+Book of the day  Bitcoin Billionaires by Ben Mezrich review – the tale of the Winklevoss twins,0.0182474851608276,positive,discard
+Big tech companies are trying to rewrite the rules to get your data,0.0182780027389526,negative,negative
+"Drax power plant to stop burning coal, with loss of 230 jobs",0.0183084905147552,positive,negative
+"Business live  Jaguar Land Rover to cut production and 1,000 jobs in the Midlands – as it happened",0.0185525715351104,negative,negative
+UK income inequality increasing as benefits cuts hit poorest,0.0186364650726318,negative,negative
+'Coal is over': the miners rooting for the Green New Deal,0.0186745822429656,positive,positive
+"Here in Liverpool, we know what northern austerity looks like up close",0.0186745822429656,positive,negative
+UK needs 'biggest-ever peacetime job creation plan' to stop mass unemployment,0.0187356173992156,positive,positive
+"Business live  Stock market turmoil wipes £56bn off FTSE 100, in worst day since Brexit vote - as it happened",0.0188118517398834,positive,negative
+"Economics viewpoint  
+
+
+  Saudi Arabia has the most to lose from a sharp rise in oil prices",0.0188271105289459,negative,negative
+"Larry Cohen, cult exploitation director, dies aged 77",0.0189186632633209,negative,discard
+"The panel  
+
+
+  2020 budget: the Guardian panel’s verdict",0.0189186632633209,positive,discard
+Pressure grows for developing world debt relief over coronavirus,0.0189186632633209,positive,positive
+York shop bans cheesy Christmas music for sake of staff,0.0189643800258636,negative,discard
+UK manufacturing sector ‘far larger than politicians realise’,0.0190101563930511,positive,discard
+Wales is doing it. So why won’t Westminster support the UK steel industry?,0.0190406739711761,negative,discard

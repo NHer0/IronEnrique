@@ -5,7 +5,44 @@ from sklearn.preprocessing import (StandardScaler, MinMaxScaler)
 from sklearn.preprocessing import OrdinalEncoder
 
 
-def my_transformations(x, y, test_size=0.2, numerical=True, scaler="standard", categorical=True, ordinal_dict=None, nominal_list=[]):
+def my_transformations(x, y, test_size=0.2, numerical=True, scaler="standard",
+                       categorical=True, ordinal_dict=None, nominal_list=[]):
+    """
+
+
+    Parameters
+    ----------
+    x : DataFrame or Series
+        Estimators
+    y : DataFrame or Series
+        Target Variable
+    test_size : float, optional
+        Size in fraction (0-1) of the test set. The default is 0.2.
+    numerical : Boolean, optional
+        Numerical Flag, True if the output DataFrame should contain numerical variables.
+        The default is True.
+    scaler : String, optional
+        The type of numerical scaling method to be used. Values accepted are
+        "standard" and "minmax". The default is "standard".
+    categorical : Boolean, optional
+        Categorical Flag, True if the output DataFrame should contain categorical variables.
+        The default is True.
+    ordinal_dict : Dictionary, optional
+        Dictionary containing the rules for the ordinal encoding. The default is None.
+    nominal_list : List, optional
+        List containing the columns that require one-hot encoding . The default is [].
+
+    Returns
+    -------
+    dict
+        A dictionary containing two records, "train" and "test".
+        These two are lists containing the transformed train and test set:
+            - Scaled Numerical columns
+            - Ordinal Encoded columns
+            - One-Hot Encoded columns
+            - Target Variable
+
+    """
 
     # Train/Test Split
 
@@ -33,6 +70,11 @@ def my_transformations(x, y, test_size=0.2, numerical=True, scaler="standard", c
             elif scaler == "standard":
 
                 scaler = StandardScaler()
+
+            else:
+
+                print("The input scaling method is not supported. Please use 'standard' or 'minmax'.")
+                return
 
             scaler.fit(x_train_num)
             output_train_num = pd.DataFrame(scaler.transform(x_train_num), columns=x_train_num.columns)
@@ -95,5 +137,31 @@ def my_transformations(x, y, test_size=0.2, numerical=True, scaler="standard", c
         output_test_cat_ord = "None"
         output_test_cat_nom = "None"
 
-    return {"train": [output_train_num, output_train_cat_ord, output_train_cat_nom, y_train]
-            , "test": [output_test_num, output_test_cat_ord, output_test_cat_nom, y_test]}
+    return {"train": [output_train_num, output_train_cat_ord, output_train_cat_nom, y_train],
+            "test": [output_test_num, output_test_cat_ord, output_test_cat_nom, y_test]}
+
+
+def var_normalization(df):
+    """
+
+
+    Parameters
+    ----------
+    df : DataFrame or Series
+        Target Dataframe to be nomalized.
+
+    Returns
+    -------
+    transformer : Sklearn Transformet Object
+        Box-Cox Transformer Object.
+    power_norm : DataFrame or Series
+        Target DataFrame or Series Normalized using a box-cox transformation.
+
+    """
+
+    transformer = PowerTransformer(method="box-cox").fit(df.to_numpy().reshape(-1, 1))
+    power_norm = transformer.transform(df.to_numpy().reshape(-1, 1))
+    power_norm = pd.DataFrame(power_norm)[0]
+
+    return transformer, power_norm
+

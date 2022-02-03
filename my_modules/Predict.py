@@ -1,57 +1,170 @@
 import pandas as pd
+import numpy as np
 from sklearn.model_selection import cross_val_score
 import my_modules.Performance as Perf
+import my_modules.Plot as Plot
 from sklearn.metrics import ConfusionMatrixDisplay
 import matplotlib.pyplot as plt
 
-def regression(x_train, y_train, x_test, y_test, model, verbose=True, plot=True, y_transformer=None):
 
-    # Model Fit
+def regression(x_train, y_train, x_test, y_test, model, cv=10, verbose=True, plot=True, y_transformer=None):
+    """
 
+
+    Parameters
+    ----------
+    x_train : DataFrame or Series
+        Estimators (train set).
+    y_train : DataFrame or Series
+        Observed Target Variable (train set).
+    x_test : DataFrame or Series
+        Estimators (test set).
+    y_test : DataFrame or Series
+        Observed Target Variable (test set).
+    model : Sklearn model object
+        Model to be used for the prediction
+    cv : Integer, optional
+        Number of cross validation folds. The default is 10.
+    verbose : Boolean, optional
+        The default is True.
+    plot : Boolean, optional
+        The default is True.
+    y_transformer : String or sklearn transformer object, optional
+        The normalization transformer used on the target variable, if any. The default is None.
+
+    Returns
+    -------
+    dict
+        Results of the regression.
+        - Fitted Model
+        - Cross Validation Scores
+        - Prediction results
+        - Performance Metrics
+
+    """
+
+    # Model cross validation
+    val_scores = cross_val_score(model, x_train, y_train, cv=cv)
+
+    # Fit the model
     model.fit(x_train, y_train)
 
     # Predictions
-
     y_pred_train = model.predict(x_train)
     y_pred_test = model.predict(x_test)
 
     if y_transformer is not None:
 
-            y_train = pd.DataFrame(y_transformer.inverse_transform(np.array(y).reshape(-1, 1)))[0]
-            y_pred_train = pd.DataFrame(y_transformer.inverse_transform(y_pred.reshape(-1, 1)))[0]
+        if y_transformer != "log":
 
-    prediction_train = pd.DataFrame({"y": y_train, "y_pred": y_pred_train})
+            y_train = pd.DataFrame(y_transformer.inverse_transform(np.array(y_train).reshape(-1, 1)))[0]
+            y_pred_train = pd.DataFrame(y_transformer.inverse_transform(y_pred_train.reshape(-1, 1)))[0]
 
+            y_test = pd.DataFrame(y_transformer.inverse_transform(np.array(y_test).reshape(-1, 1)))[0]
+            y_pred_test = pd.DataFrame(y_transformer.inverse_transform(y_pred_test.reshape(-1, 1)))[0]
 
-def classification(x_train, y_train, x_test, y_test, model, cv=10, pos_label=1, verbose=True, plot=True):
+        elif y_transformer == "log":
 
-    # Fit the model
+            y_train = np.exp(y_train)
+            y_pred_train = np.exp(y_pred_train)
 
-    model.fit(x_train, y_train)
+            y_test = np.exp(y_test)
+            y_pred_test = np.exp(y_pred_test)
 
-    # Model cross validation
+    prediction_results = pd.DataFrame({"train": {"y": y_train, "y_pred": y_pred_train},
+                                       "test": {"y": y_test, "y_pred": y_pred_test}})
 
-    val_scores = cross_val_score(model, x_train, y_train, cv=cv)
+    # Build the performance df
     performance_metrics = pd.DataFrame({"error_metric": [f'val_mean_score (k={cv})', f'val_std (k={cv})'],
-                                        "train": [val_scores.mean(), val_scores.std()],
+                                        "train": [np.mean(val_scores), np.std(val_scores)],
                                         "test": ["-", "-"]})
     performance_metrics = performance_metrics.set_index("error_metric")
 
-    # Predictions
+    # Performance Evaluation
+    error_metrics = Perf.perf_regression(y_train, y_test, y_pred_train, y_pred_test)
+    performance_metrics = pd.concat([performance_metrics, error_metrics], axis=0)
+    performance_metrics["train"] = performance_metrics["train"].astype("object")
 
+    if verbose:
+        print("-----------------")
+        print(f'The model score using K-fold cross validation (k={cv}) is {round(np.mean(val_scores), 3)} '
+              f'with a standard deviation of {round(np.std(val_scores), 3)}')
+        print("-----------------")
+        print("The performance metrics of the model")
+        display(performance_metrics)
+        print("-----------------")
+
+    if plot:
+        Plot.regression_plots(prediction_results["train"], set_id="train", fig_size=(15, 5))
+
+        Plot.regression_plots(prediction_results["test"], set_id="test", fig_size=(15, 5))
+
+    return {"model": model, "val_scores": val_scores, "prediction_results": prediction_results,
+            "performance_metrics": performance_metrics}
+
+
+def classification(x_train, y_train, x_test, y_test, model, cv=10, pos_label=1, verbose=True, plot=True):
+    """
+
+
+    Parameters
+    ----------
+    x_train : DataFrame or Series
+        Estimators (train set).
+    y_train : DataFrame or Series
+        Observed Target Variable (train set).
+    x_test : DataFrame or Series
+        Estimators (test set).
+    y_test : DataFrame or Series
+        Observed Target Variable (test set).
+    model : Sklearn model object
+        Model to be used for the prediction
+    cv : Integer, optional
+        Number of cross validation folds. The default is 10.
+    pos_label: integer, optional
+        Label of interest to calculate metrics (recall, precision)
+    verbose : Boolean, optional
+        The default is True.
+    plot : Boolean, optional
+        The default is True.
+    y_transformer : String or sklearn transformer object, optional
+        The normalization transformer used on the target variable, if any. The default is None.
+
+    Returns
+    -------
+    dict
+        Results of the classification.
+        - Fitted Model
+        - Cross Validation Scores
+        - Prediction results
+        - Performance Metrics
+
+    """
+
+    # Model cross validation
+    val_scores = cross_val_score(model, x_train, y_train, cv=cv)
+
+    # Fit the model
+    model.fit(x_train, y_train)
+
+    # Predictions
     y_pred_train = model.predict(x_train)
     y_pred_test = model.predict(x_test)
 
     prediction_results = pd.DataFrame({"train": {"y": y_train, "y_pred": y_pred_train},
                                        "test": {"y": y_test, "y_pred": y_pred_test}})
 
-    # Performance Evaluation
+    # Build the performance df
+    performance_metrics = pd.DataFrame({"error_metric": [f'val_mean_score (k={cv})', f'val_std (k={cv})'],
+                                        "train": [val_scores.mean(), val_scores.std()],
+                                        "test": ["-", "-"]})
+    performance_metrics = performance_metrics.set_index("error_metric")
 
-    error_metrics = Perf.perf_classification(y_train, y_test, y_pred_train, y_pred_test, pos_label=pos_label)
+    # Performance Evaluation
+    error_metrics = Perf.perf_classification(y_train, y_test, y_pred_train, y_pred_test)
     performance_metrics = pd.concat([performance_metrics, error_metrics], axis=0)
 
     if verbose:
-
         print("-----------------")
         print(f'The model score using K-fold cross validation (k={cv}) is {round(val_scores.mean(), 3)} '
               f'with a standard deviation of {round(val_scores.std(), 3)}')
@@ -61,7 +174,6 @@ def classification(x_train, y_train, x_test, y_test, model, cv=10, pos_label=1, 
         print("-----------------")
 
     if plot:
-
         print("Confusion matrix for the train set")
         print("-----------------")
 
@@ -74,12 +186,11 @@ def classification(x_train, y_train, x_test, y_test, model, cv=10, pos_label=1, 
         ConfusionMatrixDisplay.from_predictions(y_test, y_pred_test)
         plt.show()
 
-    return {"model": model, "val_scores": val_scores, "prediction_results": prediction_results
-            , "performance_metrics": performance_metrics}
+    return {"model": model, "val_scores": val_scores, "prediction_results": prediction_results,
+            "performance_metrics": performance_metrics}
 
 
 def model_comparison(list_models, predict_function, model_index=None, **kwargs):
-
     arrays = [[], []]
 
     for i in range(len(list_models)):

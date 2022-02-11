@@ -1,0 +1,694 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.22.0108.1039                               -->
+<workbook original-version='18.1' source-build='2021.4.3 (20214.22.0108.1039)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='order_payments (olist)' inline='true' name='federated.1njavxq1qmujqz1e5serw0s9hawl' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='localhost' name='mysql.1dfmzal0gl861c1698a8t1egantv'>
+            <connection class='mysql' dbname='olist' odbc-native-protocol='' one-time-sql='' port='3306' server='localhost' source-charset='' username='root' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='mysql.1dfmzal0gl861c1698a8t1egantv' name='order_payments' table='[order_payments]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='mysql.1dfmzal0gl861c1698a8t1egantv' name='order_payments' table='[order_payments]' type='table' />
+          <relation connection='mysql.1dfmzal0gl861c1698a8t1egantv' name='orders' table='[orders]' type='table' />
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[customer_id]' value='[orders].[customer_id]' />
+          <map key='[order_approved_at]' value='[orders].[order_approved_at]' />
+          <map key='[order_delivered_carrier_date]' value='[orders].[order_delivered_carrier_date]' />
+          <map key='[order_delivered_customer_date]' value='[orders].[order_delivered_customer_date]' />
+          <map key='[order_estimated_delivery_date]' value='[orders].[order_estimated_delivery_date]' />
+          <map key='[order_id (orders)]' value='[orders].[order_id]' />
+          <map key='[order_id]' value='[order_payments].[order_id]' />
+          <map key='[order_purchase_timestamp]' value='[orders].[order_purchase_timestamp]' />
+          <map key='[order_status]' value='[orders].[order_status]' />
+          <map key='[payment_installments]' value='[order_payments].[payment_installments]' />
+          <map key='[payment_sequential]' value='[order_payments].[payment_sequential]' />
+          <map key='[payment_type]' value='[order_payments].[payment_type]' />
+          <map key='[payment_value]' value='[order_payments].[payment_value]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>order_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[order_id]</local-name>
+            <parent-name>[order_payments]</parent-name>
+            <remote-alias>order_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>16383</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LROOT' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[order_payments_0891EBA188E549CDA9EEF3ACEF9C7143]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payment_sequential</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[payment_sequential]</local-name>
+            <parent-name>[order_payments]</parent-name>
+            <remote-alias>payment_sequential</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[order_payments_0891EBA188E549CDA9EEF3ACEF9C7143]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payment_type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[payment_type]</local-name>
+            <parent-name>[order_payments]</parent-name>
+            <remote-alias>payment_type</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>16383</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[order_payments_0891EBA188E549CDA9EEF3ACEF9C7143]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payment_installments</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[payment_installments]</local-name>
+            <parent-name>[order_payments]</parent-name>
+            <remote-alias>payment_installments</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[order_payments_0891EBA188E549CDA9EEF3ACEF9C7143]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payment_value</remote-name>
+            <remote-type>4</remote-type>
+            <local-name>[payment_value]</local-name>
+            <parent-name>[order_payments]</parent-name>
+            <remote-alias>payment_value</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>6</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_REAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_FLOAT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[order_payments_0891EBA188E549CDA9EEF3ACEF9C7143]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[order_id (orders)]</local-name>
+            <parent-name>[orders]</parent-name>
+            <remote-alias>order_id</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>16383</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[orders_C99DECF854BF432EBC3BE867677D3D0F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[customer_id]</local-name>
+            <parent-name>[orders]</parent-name>
+            <remote-alias>customer_id</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>16383</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[orders_C99DECF854BF432EBC3BE867677D3D0F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[order_status]</local-name>
+            <parent-name>[orders]</parent-name>
+            <remote-alias>order_status</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>16383</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[orders_C99DECF854BF432EBC3BE867677D3D0F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_purchase_timestamp</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[order_purchase_timestamp]</local-name>
+            <parent-name>[orders]</parent-name>
+            <remote-alias>order_purchase_timestamp</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[orders_C99DECF854BF432EBC3BE867677D3D0F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_approved_at</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[order_approved_at]</local-name>
+            <parent-name>[orders]</parent-name>
+            <remote-alias>order_approved_at</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[orders_C99DECF854BF432EBC3BE867677D3D0F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_delivered_carrier_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[order_delivered_carrier_date]</local-name>
+            <parent-name>[orders]</parent-name>
+            <remote-alias>order_delivered_carrier_date</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[orders_C99DECF854BF432EBC3BE867677D3D0F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_delivered_customer_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[order_delivered_customer_date]</local-name>
+            <parent-name>[orders]</parent-name>
+            <remote-alias>order_delivered_customer_date</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[orders_C99DECF854BF432EBC3BE867677D3D0F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_estimated_delivery_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[order_estimated_delivery_date]</local-name>
+            <parent-name>[orders]</parent-name>
+            <remote-alias>order_estimated_delivery_date</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[orders_C99DECF854BF432EBC3BE867677D3D0F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='2017_Sells' datatype='real' name='[2018_Sells (copy)_1923037042190159876]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(IF DATEPART(&apos;year&apos;, [order_delivered_carrier_date]) = 2017&#13;&#10;THEN [payment_value]&#13;&#10;ELSE NULL&#13;&#10;END)' />
+      </column>
+      <column caption='2018_Sells' datatype='real' name='[Calculation_1923037042188984322]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(IF DATEPART(&apos;year&apos;, [order_delivered_carrier_date]) = 2018&#13;&#10;THEN [payment_value]&#13;&#10;ELSE NULL&#13;&#10;END)' />
+      </column>
+      <column caption='Sales_YoY' datatype='real' name='[Calculation_1923037042193666053]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='([Calculation_1923037042188984322]-[2018_Sells (copy)_1923037042190159876])/[2018_Sells (copy)_1923037042190159876]' />
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='order_payments' datatype='table' name='[__tableau_internal_object_id__].[order_payments_0891EBA188E549CDA9EEF3ACEF9C7143]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='orders' datatype='table' name='[__tableau_internal_object_id__].[orders_C99DECF854BF432EBC3BE867677D3D0F]' role='measure' type='quantitative' />
+      <column caption='Customer Id' datatype='string' name='[customer_id]' role='dimension' type='nominal' />
+      <column caption='Order Approved At' datatype='datetime' name='[order_approved_at]' role='dimension' type='ordinal' />
+      <column caption='Order Delivered Carrier Date' datatype='datetime' default-format='*dd mmmm yyyy' name='[order_delivered_carrier_date]' role='dimension' type='ordinal' />
+      <column caption='Order Delivered Customer Date' datatype='datetime' name='[order_delivered_customer_date]' role='dimension' type='ordinal' />
+      <column caption='Order Estimated Delivery Date' datatype='datetime' name='[order_estimated_delivery_date]' role='dimension' type='ordinal' />
+      <column caption='Order Id (Orders)' datatype='string' name='[order_id (orders)]' role='dimension' type='nominal' />
+      <column caption='Order Id' datatype='string' name='[order_id]' role='dimension' type='nominal' />
+      <column caption='Order Purchase Timestamp' datatype='datetime' name='[order_purchase_timestamp]' role='dimension' type='ordinal' />
+      <column caption='Order Status' datatype='string' name='[order_status]' role='dimension' type='nominal' />
+      <column caption='Payment Installments' datatype='integer' name='[payment_installments]' role='measure' type='quantitative' />
+      <column caption='Payment Sequential' datatype='integer' name='[payment_sequential]' role='measure' type='quantitative' />
+      <column caption='Payment Type' datatype='string' name='[payment_type]' role='dimension' type='nominal' />
+      <column caption='Payment Value' datatype='real' name='[payment_value]' role='measure' type='quantitative' />
+      <column-instance column='[order_delivered_carrier_date]' derivation='Year' name='[yr:order_delivered_carrier_date:ok]' pivot='key' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[yr:order_delivered_carrier_date:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>2017</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>2016</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2018</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='order_payments' id='order_payments_0891EBA188E549CDA9EEF3ACEF9C7143'>
+            <properties context=''>
+              <relation connection='mysql.1dfmzal0gl861c1698a8t1egantv' name='order_payments' table='[order_payments]' type='table' />
+            </properties>
+          </object>
+          <object caption='orders' id='orders_C99DECF854BF432EBC3BE867677D3D0F'>
+            <properties context=''>
+              <relation connection='mysql.1dfmzal0gl861c1698a8t1egantv' name='orders' table='[orders]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[order_id]' />
+              <expression op='[order_id (orders)]' />
+            </expression>
+            <first-end-point object-id='order_payments_0891EBA188E549CDA9EEF3ACEF9C7143' />
+            <second-end-point object-id='orders_C99DECF854BF432EBC3BE867677D3D0F' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='order_payments (olist)' name='federated.1njavxq1qmujqz1e5serw0s9hawl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1njavxq1qmujqz1e5serw0s9hawl'>
+            <column caption='2017_Sells' datatype='real' name='[2018_Sells (copy)_1923037042190159876]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF DATEPART(&apos;year&apos;, [order_delivered_carrier_date]) = 2017&#13;&#10;THEN [payment_value]&#13;&#10;ELSE NULL&#13;&#10;END)' />
+            </column>
+            <column caption='2018_Sells' datatype='real' name='[Calculation_1923037042188984322]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF DATEPART(&apos;year&apos;, [order_delivered_carrier_date]) = 2018&#13;&#10;THEN [payment_value]&#13;&#10;ELSE NULL&#13;&#10;END)' />
+            </column>
+            <column caption='Sales_YoY' datatype='real' name='[Calculation_1923037042193666053]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='([Calculation_1923037042188984322]-[2018_Sells (copy)_1923037042190159876])/[2018_Sells (copy)_1923037042190159876]' />
+            </column>
+            <column-instance column='[order_delivered_carrier_date]' derivation='Month' name='[mn:order_delivered_carrier_date:ok]' pivot='key' type='ordinal' />
+            <column caption='Order Delivered Carrier Date' datatype='datetime' default-format='*dd mmmm yyyy' name='[order_delivered_carrier_date]' role='dimension' type='ordinal' />
+            <column caption='Payment Value' datatype='real' name='[payment_value]' role='measure' type='quantitative' />
+            <column-instance column='[payment_value]' derivation='Sum' name='[sum:payment_value:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1923037042193666053]' derivation='User' name='[usr:Calculation_1923037042193666053:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[order_delivered_carrier_date]' derivation='Year' name='[yr:order_delivered_carrier_date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1njavxq1qmujqz1e5serw0s9hawl].[yr:order_delivered_carrier_date:ok]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[yr:order_delivered_carrier_date:ok]' member='2017' />
+              <groupfilter function='member' level='[yr:order_delivered_carrier_date:ok]' member='2018' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1njavxq1qmujqz1e5serw0s9hawl].[yr:order_delivered_carrier_date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1njavxq1qmujqz1e5serw0s9hawl].[mn:order_delivered_carrier_date:ok]' value='98' />
+            <format attr='text-format' field='[federated.1njavxq1qmujqz1e5serw0s9hawl].[usr:Calculation_1923037042193666053:qk]' value='p0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.1njavxq1qmujqz1e5serw0s9hawl].[usr:Calculation_1923037042193666053:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1njavxq1qmujqz1e5serw0s9hawl].[sum:payment_value:qk]</rows>
+        <cols>[federated.1njavxq1qmujqz1e5serw0s9hawl].[mn:order_delivered_carrier_date:ok]</cols>
+      </table>
+      <simple-id uuid='{97BF969B-801A-47BD-9265-338C0A41370C}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='order_payments (olist)' name='federated.1njavxq1qmujqz1e5serw0s9hawl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1njavxq1qmujqz1e5serw0s9hawl'>
+            <column caption='2017_Sells' datatype='real' name='[2018_Sells (copy)_1923037042190159876]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF DATEPART(&apos;year&apos;, [order_delivered_carrier_date]) = 2017&#13;&#10;THEN [payment_value]&#13;&#10;ELSE NULL&#13;&#10;END)' />
+            </column>
+            <column caption='2018_Sells' datatype='real' name='[Calculation_1923037042188984322]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF DATEPART(&apos;year&apos;, [order_delivered_carrier_date]) = 2018&#13;&#10;THEN [payment_value]&#13;&#10;ELSE NULL&#13;&#10;END)' />
+            </column>
+            <column caption='Sales_YoY' datatype='real' name='[Calculation_1923037042193666053]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='([Calculation_1923037042188984322]-[2018_Sells (copy)_1923037042190159876])/[2018_Sells (copy)_1923037042190159876]' />
+            </column>
+            <column caption='Order Delivered Carrier Date' datatype='datetime' default-format='*dd mmmm yyyy' name='[order_delivered_carrier_date]' role='dimension' type='ordinal' />
+            <column caption='Payment Value' datatype='real' name='[payment_value]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1923037042193666053]' derivation='User' name='[usr:Calculation_1923037042193666053:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1njavxq1qmujqz1e5serw0s9hawl].[usr:Calculation_1923037042193666053:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E2A49AB5-B296-485A-B1C3-4AA357F3484C}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1njavxq1qmujqz1e5serw0s9hawl].[yr:order_delivered_carrier_date:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1njavxq1qmujqz1e5serw0s9hawl].[:Measure Names]</field>
+            <field>[federated.1njavxq1qmujqz1e5serw0s9hawl].[mn:order_delivered_carrier_date:ok]</field>
+            <field>[federated.1njavxq1qmujqz1e5serw0s9hawl].[none:Year:ok]</field>
+            <field>[federated.1njavxq1qmujqz1e5serw0s9hawl].[none:Year:qk]</field>
+            <field>[federated.1njavxq1qmujqz1e5serw0s9hawl].[yr:order_delivered_carrier_date:ok]</field>
+            <field>[federated.1njavxq1qmujqz1e5serw0s9hawl].[yr:order_delivered_customer_date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1ACE6128-7128-4BA1-8EC6-3AEED6380113}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{67E39D9C-EC0B-4ACB-A01A-5EDC61631CF4}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='29' name='Sheet 2' width='84'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

@@ -161,7 +161,7 @@ def classification(x_train, y_train, x_test, y_test, model, cv=10, pos_label=1, 
     performance_metrics = performance_metrics.set_index("error_metric")
 
     # Performance Evaluation
-    error_metrics = Perf.perf_classification(y_train, y_test, y_pred_train, y_pred_test)
+    error_metrics = Perf.perf_classification(y_train, y_test, y_pred_train, y_pred_test, pos_label=pos_label)
     performance_metrics = pd.concat([performance_metrics, error_metrics], axis=0)
 
     if verbose:
